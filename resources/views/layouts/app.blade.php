@@ -19,7 +19,13 @@
                         <a class="nav-link" href="{{ route('tasks.index') }}">Tareas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tasks.create') }}">Nueva Tarea</a>
+                        <a class="nav-link" href="{{ route('actors.index') }}">Actores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('films.index') }}">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('rentals.index') }}">Rentas</a>
                     </li>
                 </ul>
             </div>
