@@ -18,6 +18,9 @@
                 <a class="nav-link" href="{{ route('actors.index') }}">Actores</a>
                 <a class="nav-link" href="{{ route('films.index') }}">Películas</a>
                 <a class="nav-link" href="{{ route('rentals.index') }}">Rentas</a>
+                <a class="nav-link btn btn-outline-light ms-2" href="{{ route('login') }}">
+                    <i class="bi bi-box-arrow-in-right"></i> Login
+                </a>
             </div>
         </div>
     </nav>
@@ -71,10 +74,10 @@
                     <div class="card-body">
                         <p>Estas rutas están protegidas con el middleware <code>admin</code>:</p>
                         <div class="d-grid gap-2">
-                            <a href="/admin" class="btn btn-outline-danger">
+                            <a href="{{ route('admin.dashboard') }}" class="btn btn-outline-danger">
                                 <i class="bi bi-speedometer2"></i> Panel de Administración
                             </a>
-                            <a href="/admin/users" class="btn btn-outline-danger">
+                            <a href="{{ route('admin.users') }}" class="btn btn-outline-danger">
                                 <i class="bi bi-people"></i> Gestión de Usuarios
                             </a>
                         </div>
@@ -96,12 +99,12 @@
                     <div class="card-body">
                         <p>Estas rutas están protegidas con el middleware <code>role:admin,moderator</code>:</p>
                         <div class="d-grid gap-2">
-                            <a href="/moderator" class="btn btn-outline-warning">
+                            <a href="{{ route('admin.moderator') }}" class="btn btn-outline-warning">
                                 <i class="bi bi-clipboard-data"></i> Panel de Moderación
                             </a>
-                            <a href="/reports" class="btn btn-outline-warning">
-                                <i class="bi bi-graph-up"></i> Ver Reportes
-                            </a>
+                            <small class="text-muted mt-2 d-block">
+                                <i class="bi bi-info-circle"></i> Otras rutas pueden agregarse aquí según necesidades
+                            </small>
                         </div>
                         <div class="mt-3">
                             <small class="text-muted">

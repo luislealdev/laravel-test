@@ -34,6 +34,13 @@
                         <a class="nav-link" href="{{ route('rentals.index') }}">Rentas</a>
                     </li>
                 </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="{{ route('login') }}">
+                            <i class="bi bi-box-arrow-in-right"></i> Login
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

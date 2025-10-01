@@ -11,6 +11,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Ruta de login solo para diseño (sin funcionalidad)
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+
 // Rutas públicas de CRUD (sin middleware de autenticación)
 Route::resource('tasks', TaskController::class);
 Route::resource('actors', ActorController::class);
